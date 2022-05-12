@@ -739,7 +739,7 @@ footer div img {
     padding: 1em;
     position: absolute;
     width: 50%;
-    right: 17px;
+    right: 0px;
     top: 80px;
     z-index: 99;
     font-size: 1.5vw;
@@ -766,10 +766,10 @@ footer div img {
     background: #172a46;
     color: var(--text-color);
     padding: 1em;
-    width: 50%;
+    width: 70%;
     position: absolute;
-    left: 67px;
-    top: 70px;
+    left: 0px;
+    top: 60px;
     z-index: 99;
     font-size: 1.5vw;
   }

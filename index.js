@@ -10,6 +10,8 @@ mobileBtnExit.addEventListener("click", function() {
     nav.classList.remove("menu-btn");
 })
 
+
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',

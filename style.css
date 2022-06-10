@@ -219,7 +219,7 @@ header .container nav ul .contact-style:hover {
       -ms-grid-row-align: center;
       align-self: center;
   color: var(--text-color);
-  letter-spacing: .1em;
+  margin: 0 auto;
 }
 
 .about .sub-container .words div {
@@ -703,6 +703,13 @@ footer div img {
 }
 
 @media only screen and (max-width: 590px) {
+  .about .container2 .sub-container .word {
+    font-size: 16px;
+  }
+  .about .container2 .sub-container .word {
+    font-size: 12px;
+    word-break: break-all;
+  }
   .sample {
     background-color: var(--primary-color);
     padding: 0 1em;

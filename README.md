@@ -1,6 +1,6 @@
 # My Portfolio
 
-<p>A portfolio website showing important information about me, my skills and other necessary information.</p>
+<p>A portfolio website showing important information about me,skills and other necessary information about me.</p>
 <h1>Table of Content</h1>
 
 <ul>

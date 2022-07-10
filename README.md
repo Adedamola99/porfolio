@@ -23,4 +23,6 @@
   <li>Acknowledgments</li>
 </ul>
 
+<h1>The challenge</h1>
+
 # THIS README IS UNDER CONSTRUCTION

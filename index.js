@@ -1,6 +1,11 @@
-var mobileBtn = document.querySelector("#mobile-cta");
-var nav = document.querySelector("nav");
-var mobileBtnExit = document.querySelector("#mobile-exit");
+const mobileBtn = document.querySelector("#mobile-cta");
+const nav = document.querySelector("nav");
+const mobileBtnExit = document.querySelector("#mobile-exit");
+const date = document.querySelector("#date")
+
+// Update Date Automatically
+const newDate = new Date().getFullYear();
+date.innerHTML = newDate;
 
 mobileBtn.addEventListener("click", function() {
     nav.classList.add("menu-btn");

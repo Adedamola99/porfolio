@@ -7,16 +7,18 @@ const date = document.querySelector("#date")
 const newDate = new Date().getFullYear();
 date.innerHTML = newDate;
 
+// Display menu
 mobileBtn.addEventListener("click", function() {
     nav.classList.add("menu-btn");
 })
 
+// Exit menu
 mobileBtnExit.addEventListener("click", function() {
     nav.classList.remove("menu-btn");
 })
 
 
-
+// Scroll Effect
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',

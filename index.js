@@ -2,6 +2,12 @@ const mobileBtn = document.querySelector("#mobile-cta");
 const nav = document.querySelector("nav");
 const mobileBtnExit = document.querySelector("#mobile-exit");
 const date = document.querySelector("#date")
+const preloader = document.querySelector(".preloader");
+
+// Adding a Preloader
+window.addEventListener("load", function(){
+    preloader.classList.add("hide-preloader");
+})
 
 // Update Date Automatically
 const newDate = new Date().getFullYear();

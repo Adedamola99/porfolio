@@ -16,7 +16,25 @@ html{
     font-size: 100%;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all 0.3s linear;
+  }
 
+  .hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+  }
 
 
 header {
@@ -24,7 +42,7 @@ header {
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: -998;
 
 
     .logo{

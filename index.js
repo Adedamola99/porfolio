@@ -46,9 +46,7 @@ sr.reveal('.words', {delay: 200})
 sr.reveal('.skillscroll', {})
 sr.reveal('.container4-1', {interval: 400})
 
-//contact scroll
-sr.reveal('.container5', {})
-sr.reveal('input', {interval: 400})
+
 
 
 

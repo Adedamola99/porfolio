@@ -396,7 +396,7 @@ header .container nav ul .contact-style:hover {
   width: 80%;
   right: 7px;
   top: 140px;
-  z-index: 99;
+  z-index: 9;
   font-size: 1.5vw;
   letter-spacing: .1em;
 }
@@ -430,7 +430,7 @@ header .container nav ul .contact-style:hover {
   position: absolute;
   left: 7px;
   top: 80px;
-  z-index: 99;
+  z-index: 9;
   font-size: 1.5vw;
   letter-spacing: .1em;
 }
@@ -799,7 +799,7 @@ footer div img {
     width: 50%;
     right: 0px;
     top: 80px;
-    z-index: 99;
+    z-index: 9;
     font-size: 1.5vw;
   }
   .sample .samples .work-img2 {
@@ -828,7 +828,7 @@ footer div img {
     position: absolute;
     left: 0px;
     top: 60px;
-    z-index: 99;
+    z-index: 9;
     font-size: 1.5vw;
   }
 }

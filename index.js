@@ -3,6 +3,7 @@ const nav = document.querySelector("nav");
 const mobileBtnExit = document.querySelector("#mobile-exit");
 const date = document.querySelector("#date")
 const preloader = document.querySelector(".preloader");
+const topLink = document.querySelector(".top-link");
 
 // Adding a Preloader
 window.addEventListener("load", function(){
@@ -21,6 +22,17 @@ mobileBtn.addEventListener("click", function() {
 // Exit menu
 mobileBtnExit.addEventListener("click", function() {
     nav.classList.remove("menu-btn");
+})
+
+// Adding a Top Link
+window.addEventListener("scroll", function(){
+    const scrollHeight = window.pageYOffset;
+    
+    if (scrollHeight > 500){
+        topLink.classList.add("show-link")
+    } else {
+        topLink.classList.remove("show-link")
+    }
 })
 
 

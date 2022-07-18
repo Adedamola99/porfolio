@@ -15,6 +15,7 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 .preloader {
@@ -582,6 +583,30 @@ footer div {
 footer div img {
   width: 35px;
   padding: .3em;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: #40cfd4;
+  width: 2rem;
+  height: 2rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 950px) {

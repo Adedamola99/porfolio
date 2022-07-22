@@ -19,7 +19,7 @@
       <li>Continued development</li>
     </ul>
   </li>
-  <li>Author</li>
+  <li>Author(s)</li>
   <li>Acknowledgments</li>
 </ul>
 

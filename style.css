@@ -591,12 +591,8 @@ footer div img {
   bottom: 3rem;
   right: 3rem;
   background-color: #40cfd4;
-  width: 2rem;
-  height: 2rem;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
   border-radius: 0.5rem;
+  padding: 0.3em;
   color: white;
   -webkit-animation: bounce 2s ease-in-out infinite;
           animation: bounce 2s ease-in-out infinite;

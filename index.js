@@ -1,9 +1,82 @@
+const workData = [
+    {
+      id: 1,
+      githubLink: "https://github.com/Adedamola99/Codewell-Challenge/",
+      img: "./images/sample 2.PNG",
+      siteLink: "https://adedamola99.github.io/Codewell-Challenge/",
+      text: "A codwell challenge that entailed creating a responsive website that I hosted on github👩‍💻😎. I learned a lot from this project because it helped me understand a lot of things about HTML, CSS, and javascript.",
+    },
+    {
+      id: 2,
+      githubLink: "https://github.com/Adedamola99/simple-to-do-project/",
+      siteLink: "https://adedamola99.github.io/simple-to-do-project/",
+      img: "./images/todo2.PNG",
+      text: "A simple, clean, and appealing to-do list with various functionality that is hosted on github⚡. I learned a lot from this project because it helped me understand a lot about vanilla Js🥰 and, more importantly, Jquery😍..",
+    },
+    {
+      id: 3,
+      githubLink: "https://github.com/Adedamola99/commune/",
+      siteLink: "https://adedamola99.github.io/commune/",
+      img: "./images/sample3.PNG",
+      text: "A frontendMentor challenge that entails creating a responsive landing page and is hosted on github😎. This project taught me a lot about grid and flexbox and helped me understand a lot of things🥰.",
+    },
+    {
+      id: 4,
+      githubLink: "https://github.com/Adedamola99/project-2/",
+      siteLink: "https://adedamola99.github.io/project-2/",
+      img: "./images/screencapture-127-0-0-1-5500-index-html-2022-04-19-16_23_21.png",
+      text: "A frontendMentor challenge which involves building a responsive landing page and it is hosted on github😎. This project exposed me to new challenges⚡⚡⚡ on how to do things and intelligent way of doing stuff🔥.",
+    },
+  ];
+
+
+
 const mobileBtn = document.querySelector("#mobile-cta");
 const nav = document.querySelector("nav");
 const mobileBtnExit = document.querySelector("#mobile-exit");
 const date = document.querySelector("#date")
 const preloader = document.querySelector(".preloader");
 const topLink = document.querySelector(".top-link");
+
+const img = document.getElementById("work-image");
+const text = document.getElementById("text");
+const iconLink = document.getElementById("icon-link");
+const siteLink = document.getElementById("site-link");
+const imgLink = document.getElementById("image-link");
+
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+
+let currentItem = 0;
+
+window.addEventListener("DOMContentLoaded", () => {
+    showWorkDetails()
+})
+
+function showWorkDetails() {
+    const item = workData[currentItem];
+    img.src = item.img;
+    imgLink.href = item.siteLink;
+    text.textContent = item.text;
+    iconLink.href = item.githubLink;
+    siteLink.href = item.siteLink;
+}
+
+nextBtn.addEventListener("click", () => {
+    currentItem++;
+    if (currentItem > workData.length - 1) {
+     currentItem =  0;  
+    }
+    showWorkDetails()
+})
+
+prevBtn.addEventListener("click", () => {
+    currentItem--;
+    if (currentItem < 0) {
+        currentItem =  workData.length - 1;  
+       }
+    showWorkDetails()
+})
 
 // Adding a Preloader
 window.addEventListener("load", function(){

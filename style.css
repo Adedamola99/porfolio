@@ -366,73 +366,76 @@ header .container nav ul .contact-style:hover {
   padding: 0 10px;
 }
 
-.sample .samples .work-img {
+.sample .samples {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sample .samples .navigator {
+  width: 30px;
+  cursor: pointer;
+}
+
+.sample .samples .work-info {
   padding-top: 2em;
   -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
           box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  color: var(--text-color);
+  background: #172a46;
+  border-radius: 15px;
 }
 
-.sample .samples .work-img img {
-  max-width: 70%;
+.sample .samples .work-info .work-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sample .samples .work-info img {
+  max-width: 60%;
   -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
 
-.sample .samples .work-img img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.sample .samples .description {
-  background: #172a46;
-  color: var(--text-color);
+.sample .samples .work-info .description {
+  margin-top: .5em;
   padding: 1em;
-  position: absolute;
-  width: 80%;
-  right: 7px;
-  top: 140px;
-  z-index: 9;
-  font-size: 1.5vw;
-  letter-spacing: .1em;
 }
 
-.sample .samples .work-img2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  padding-top: 2em;
-  position: relative;
+.sample .samples .work-info .description p {
+  font-size: 1.1em;
+  font-family: Poppins;
 }
 
-.sample .samples .work-img2 img {
-  width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  cursor: pointer;
+.sample .samples .work-info .description .lower-icon-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: .8em;
 }
 
-.sample .samples .work-img2 img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.sample .samples .work-img2 .description2 {
-  background: #172a46;
-  color: var(--text-color);
-  padding: 1em;
-  width: 60%;
-  position: absolute;
-  left: 7px;
-  top: 80px;
-  z-index: 9;
-  font-size: 1.5vw;
-  letter-spacing: .1em;
+.sample .samples .work-info .description .lower-icon-space .lower-icon {
+  width: 40px;
 }
 
 .contact {

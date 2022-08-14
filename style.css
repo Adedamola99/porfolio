@@ -752,6 +752,69 @@ footer div img {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .sample .samples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sample .samples .navigator {
+    width: 30px;
+    cursor: pointer;
+  }
+  .sample .samples .work-info {
+    padding-top: 2em;
+    -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+            box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    color: var(--text-color);
+    background: #172a46;
+    border-radius: 15px;
+  }
+  .sample .samples .work-info .work-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sample .samples .work-info img {
+    max-width: 60%;
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .sample .samples .work-info .description {
+    margin-top: .5em;
+    padding: .5em;
+  }
+  .sample .samples .work-info .description p {
+    font-size: .7em;
+    font-family: Poppins;
+  }
+  .sample .samples .work-info .description .lower-icon-space {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: .8em;
+  }
+  .sample .samples .work-info .description .lower-icon-space .lower-icon {
+    width: 30px;
+  }
   .Skills .container4 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -789,76 +852,6 @@ footer div img {
   .about .container2 .sub-container .word {
     font-size: 12px;
     word-break: break-all;
-  }
-  .sample {
-    background-color: var(--primary-color);
-    padding: 0 1em;
-  }
-  .sample h1 {
-    text-align: center;
-    padding-top: 2em;
-    font-family: Poppins;
-    font-weight: 900;
-    color: var(--last-color);
-  }
-  .sample .samples .work-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    padding-top: 2em;
-    -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-            box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  }
-  .sample .samples .work-img img {
-    max-width: 70%;
-    -webkit-transition: 1s;
-    transition: 1s;
-    cursor: pointer;
-  }
-  .sample .samples .work-img img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .sample .samples .description {
-    background: #172a46;
-    color: var(--text-color);
-    padding: 1em;
-    position: absolute;
-    width: 50%;
-    right: 0px;
-    top: 80px;
-    z-index: 9;
-    font-size: 1.5vw;
-  }
-  .sample .samples .work-img2 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    padding-top: 2em;
-    position: relative;
-  }
-  .sample .samples .work-img2 img {
-    width: 100%;
-    -webkit-transition: 1s;
-    transition: 1s;
-    cursor: pointer;
-  }
-  .sample .samples .work-img2 img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .sample .samples .work-img2 .description2 {
-    background: #172a46;
-    color: var(--text-color);
-    padding: 1em;
-    width: 70%;
-    position: absolute;
-    left: 0px;
-    top: 60px;
-    z-index: 9;
-    font-size: 1.5vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

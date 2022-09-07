@@ -16,7 +16,7 @@ const workData = [
     {
         id: 3,
         githubLink: "https://github.com/Adedamola99/crowdfunding-website/",
-        img: "./images/project 5.PNG",
+        img: "./images/Project 5.PNG",
         siteLink: "https://adedamola99.github.io/crowdfunding-website/",
         text: "A Frontendmentor challenge that involved building a responsive crowdfunding interactive website with different amazing features such as a thank you message after backing and a menu showing backing plan and many others",
     },

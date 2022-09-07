@@ -1,13 +1,20 @@
 const workData = [
     {
         id: 1,
-        githubLink: "https://github.com/Adedamola99/Time-tracker-dashboard",
-        img: "./images/project4.PNG",
-        siteLink: "https://adedamola99.github.io/Time-tracker-dashboard/",
-        text: "A Frontendmentor Challenge that involved making an interactive time tracking dashboard that shows an individual amount of time spent on activities daily, weekly and monthly.",
+        githubLink: "https://github.com/Adedamola99/Trivia-Quizz-App/",
+        img: "./images/react project.PNG",
+        siteLink: "https://damia-triviagame-app.netlify.app/",
+        text: "A Scrimba react course challenge that involves building a trivia game app by pulling data from an API database and determining the user knowledge about computers while also scoring the number of correct questions answered",
     },
     {
         id: 2,
+        githubLink: "https://github.com/Adedamola99/Time-tracker-dashboard",
+        img: "./images/project4.PNG",
+        siteLink: "https://adedamola99.github.io/Time-tracker-dashboard/",
+        text: "A Frontendmentor Challenge that involved making an interactive time tracking dashboard by pulling data from a JSON file and then displaying an individual amount of time spent on activities daily, weekly and monthly.",
+    },
+    {
+        id: 3,
         githubLink: "https://github.com/Adedamola99/crowdfunding-website/",
         img: "./images/project 5.PNG",
         siteLink: "https://adedamola99.github.io/crowdfunding-website/",
@@ -15,36 +22,36 @@ const workData = [
     },
 
     {
-        id: 3,
+        id: 4,
         githubLink: "https://github.com/Adedamola99/Coding-Bootcamp-Testimonial-Slider",
         img: "./images/project 6.PNG",
         siteLink: "https://adedamola99.github.io/Coding-Bootcamp-Testimonial-Slider/",
-        text: "A Frontendmentor challenge that involved building a res[onsive individual bootcamp testimonial with a slider feature and with amazing UI design.",
+        text: "A Frontendmentor challenge that involved building a responsive individual bootcamp testimonial with a slider feature and with amazing UI design.",
     },  
       
     {
-      id: 4,
+      id: 5,
       githubLink: "https://github.com/Adedamola99/Codewell-Challenge/",
       img: "./images/sample 2.PNG",
       siteLink: "https://adedamola99.github.io/Codewell-Challenge/",
       text: "A codwell challenge that entailed creating a responsive website that I hosted on github👩‍💻😎. I learned a lot from this project because it helped me understand a lot of things about HTML, CSS, and javascript.",
     },
     {
-      id: 5,
+      id: 6,
       githubLink: "https://github.com/Adedamola99/simple-to-do-project/",
       siteLink: "https://adedamola99.github.io/simple-to-do-project/",
       img: "./images/todo2.PNG",
       text: "A simple, clean, and appealing to-do list with various functionality that is hosted on github⚡. I learned a lot from this project because it helped me understand a lot about vanilla Js🥰 and, more importantly, Jquery😍..",
     },
     {
-      id: 6,
+      id: 7,
       githubLink: "https://github.com/Adedamola99/commune/",
       siteLink: "https://adedamola99.github.io/commune/",
       img: "./images/sample3.PNG",
       text: "A frontendMentor challenge that entails creating a responsive landing page and is hosted on github😎. This project taught me a lot about grid and flexbox and helped me understand a lot of things🥰.",
     },
     {
-      id: 7,
+      id: 8,
       githubLink: "https://github.com/Adedamola99/project-2/",
       siteLink: "https://adedamola99.github.io/project-2/",
       img: "./images/screencapture-127-0-0-1-5500-index-html-2022-04-19-16_23_21.png",

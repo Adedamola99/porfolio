@@ -1,6 +1,7 @@
 let data = []
 const mobileBtn = document.querySelector("#mobile-cta");
-const nav = document.querySelector("nav");
+const linkContainer = document.querySelector(".nav-link");
+const link = document.querySelector(".link");
 const mobileBtnExit = document.querySelector("#mobile-exit");
 const date = document.querySelector("#date")
 const preloader = document.querySelector(".preloader");
@@ -63,13 +64,24 @@ date.innerHTML = newDate;
 
 // Display menu
 mobileBtn.addEventListener("click", function() {
-    nav.classList.add("menu-btn");
+    linkContainer.classList.add("display-menu");
+    mobileBtn.classList.add("clear-hamburger");
+    mobileBtnExit.classList.add("show-hamburger")
+    mobileBtnExit.classList.remove("clear-hamburger")
 })
 
 // Exit menu
 mobileBtnExit.addEventListener("click", function() {
-    nav.classList.remove("menu-btn");
+    linkContainer.classList.remove("display-menu");
+    mobileBtn.classList.add("show-hamburger");
+    mobileBtn.classList.remove("clear-hamburger");
+    mobileBtnExit.classList.add("clear-hamburger")
 })
+
+const scrollLinks = document.querySelectorAll(".scroll-link");
+const navbar = document.querySelector(".nav-center");
+
+
 
 // Adding a Top Link
 window.addEventListener("scroll", function(){

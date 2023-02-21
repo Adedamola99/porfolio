@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,6 +12,7 @@
   --text-color: #8891B0;
   --header-ff: Verdana, Geneva, Tahoma, sans-serif;
   --text-ff: Georgia, 'Times New Roman', Times, serif;
+  --transition: all 0.3s linear;
 }
 
 html {
@@ -61,7 +63,7 @@ header .logo {
   font-weight: bolder;
 }
 
-header .container {
+header .nav-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,17 +73,27 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-header .container .mobile-menu {
+header .nav-center .mobile-menu {
   display: none;
 }
 
-header .container nav .mobile-menu-exit {
+header .nav-center .mobile-menu-exit {
   display: none;
 }
 
-header .container nav ul {
+header .nav-center .nav-link {
+  margin-top: 0.7em;
+  overflow: hidden;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+header .nav-center .nav-link ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,30 +102,30 @@ header .container nav ul {
           align-items: center;
 }
 
-header .container nav ul li {
+header .nav-center .nav-link ul li {
   padding: 1em;
   list-style: none;
 }
 
-header .container nav ul li a {
+header .nav-center .nav-link ul li a {
   text-decoration: none;
   font-family: Poppins;
   color: var(--last-color);
   font-size: .9em;
 }
 
-header .container nav ul li a:hover {
+header .nav-center .nav-link ul li a:hover {
   border-bottom: 3px solid var(--secondary-color);
   color: white;
 }
 
-header .container nav ul .contact-style {
+header .nav-center .nav-link ul .contact-style {
   border: 1px solid var(--secondary-color);
   padding: .5em;
   color: var(--last-color);
 }
 
-header .container nav ul .contact-style:hover {
+header .nav-center .nav-link ul .contact-style:hover {
   background-color: var(--secondary-color);
   color: white;
 }
@@ -639,69 +651,73 @@ footer div img {
 }
 
 @media only screen and (max-width: 950px) {
-  header .container {
+  header {
+    background-color: #172a46;
+  }
+  header .nav-center {
+    display: block;
+  }
+  header .nav-center .nav-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header .container .mobile-menu {
+  header .nav-center .nav-header .mobile-menu {
     display: block;
     cursor: pointer;
-    padding: 1em;
   }
-  header .container nav.menu-btn {
+  header .nav-center .nav-header .show-hamburger {
     display: block;
+    cursor: pointer;
   }
-  header .container nav {
+  header .nav-center .nav-header .clear-hamburger {
     display: none;
-  }
-  header .container nav .mobile-menu-exit {
-    display: block;
     cursor: pointer;
-    padding: 1em;
-    float: right;
-    margin: .5em;
   }
-  header .container nav {
-    position: fixed;
-    z-index: 999;
-    right: 0;
-    top: 0;
-    background-color: #20272e;
-    height: 100vh;
-    width: 40%;
+  header .nav-center .nav-link {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
   }
-  header .container nav ul {
+  header .nav-center .nav-link ul {
     display: block;
-    padding: 1em;
-    margin-top: 5em;
-    font-family: var(--text-ff);
+    padding: 0em;
   }
-  header .container nav ul li {
-    padding-top: 1.4em;
+  header .nav-center .nav-link ul li {
+    padding: 0em;
   }
-  header .container nav ul li a {
-    color: var(--text-color);
+  header .nav-center .nav-link ul li a {
+    background-color: #172a46;
+    color: black;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
     display: block;
-    font-size: 1.1em;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    float: right;
+    font-weight: bold;
+    padding: 0.75rem 0;
   }
-  header .container nav ul li a:hover {
-    border-bottom: 3px solid var(--secondary-color);
+  header .nav-center .nav-link ul li a:hover {
+    border-bottom: none;
+    color: white;
   }
-  header .container nav ul li .contact-style {
-    padding: 0;
-    border: 0px;
-    color: var(--text-color);
+  header .nav-center .nav-link ul li .contact-style {
+    border: none;
+    padding: 0.75em 0;
+    color: black;
   }
-  header .container nav ul li .contact-style:hover {
-    background: none;
+  header .nav-center .nav-link ul li .contact-style:hover {
+    background-color: #172a46;
+    color: white;
+  }
+  header .nav-center .display-menu {
+    height: 230px;
   }
   .home .container1 .wrap {
     display: -webkit-box;

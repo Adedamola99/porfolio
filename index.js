@@ -97,7 +97,7 @@ window.addEventListener("scroll", function(){
 
 // Scroll Effect
 const sr = ScrollReveal({
-    origin: 'top',
+    origin: 'bottom',
     distance: '80px',
     duration: 2000,
     reset: true

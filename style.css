@@ -10,7 +10,7 @@
   --last-color: #CCD7F7;
   --text-color: #8891B0;
   --header-ff: Verdana, Geneva, Tahoma, sans-serif;
-  --text-ff: Georgia, 'Times New Roman', Times, serif;
+  --text-ff: 'Commissioner', monospace;
   --transition: all 0.3s linear;
 }
 
@@ -228,7 +228,7 @@ header .nav-center .nav-link ul .contact-style:hover {
 }
 
 .about .sub-container img {
-  max-width: 300px;
+  max-width: 210px;
 }
 
 .about .sub-container .words {
@@ -237,7 +237,7 @@ header .nav-center .nav-link ul .contact-style:hover {
 
 .about .sub-container .words span {
   color: var(--secondary-color);
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .about .sub-container .words .second-paragraph, .about .sub-container .words .third-paragraph {
@@ -248,7 +248,7 @@ header .nav-center .nav-link ul .contact-style:hover {
 }
 
 .about .sub-container .words p {
-  font-size: 1.1em;
+  font-size: 1.3rem;
   line-height: 1.4;
   text-align: justify;
   max-width: 90%;
@@ -261,7 +261,7 @@ header .nav-center .nav-link ul .contact-style:hover {
 }
 
 .about .sub-container .words div {
-  margin: 1.4em 0 0 2em;
+  margin: 1.4em 0 0 3.2em;
 }
 
 .about .sub-container .words div .cv {
@@ -694,7 +694,6 @@ footer div img {
   }
   header .nav-center .nav-link ul li a {
     background-color: #172a46;
-    color: black;
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
@@ -709,7 +708,6 @@ footer div img {
   header .nav-center .nav-link ul li .contact-style {
     border: none;
     padding: 0.75em 0;
-    color: black;
   }
   header .nav-center .nav-link ul li .contact-style:hover {
     background-color: #172a46;
@@ -766,6 +764,9 @@ footer div img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .about .container2 .sub-container .words div {
+    margin: 1.4em 0 0 2.5em;
   }
   .sample .samples {
     display: -webkit-box;
@@ -861,12 +862,17 @@ footer div img {
 }
 
 @media only screen and (max-width: 590px) {
-  .about .container2 .sub-container .word {
-    font-size: 16px;
+  .about .container2 .sub-container .words div {
+    margin: 1.4em 0 0 1.5em;
   }
-  .about .container2 .sub-container .word {
-    font-size: 12px;
-    word-break: break-all;
+}
+
+@media only screen and (max-width: 450px) {
+  .about .container2 .sub-container .words p {
+    font-size: .8rem;
+  }
+  .about .container2 .sub-container .words div {
+    margin: 1.4em 0 0 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

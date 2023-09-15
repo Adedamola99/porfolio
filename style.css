@@ -874,5 +874,23 @@ footer div img {
   .about .container2 .sub-container .words div {
     margin: 1.4em 0 0 1em;
   }
+  .Skills .container4 .container4-1 p {
+    font-size: .8rem;
+  }
+  .contact .container5 .wrapper div p {
+    font-size: .7em;
+  }
+  .contact .container5 .wrapper div .imagebig {
+    width: 23px;
+  }
+  footer p {
+    font-size: .5rem;
+  }
+  footer h1 {
+    font-size: 1rem;
+  }
+  footer div img {
+    width: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -304,6 +304,7 @@ header {
                 font-family: var(--text-ff);
                 line-height: 1.3em;
                 letter-spacing: .1em;
+                text-align: justify;
             }
 
             div {
@@ -577,7 +578,7 @@ footer {
   }
   
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1205px) {
     header {
         background-color: #172a46;
         

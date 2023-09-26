@@ -12,11 +12,21 @@
   --header-ff: Verdana, Geneva, Tahoma, sans-serif;
   --text-ff: 'Commissioner', monospace;
   --transition: all 0.3s linear;
+  --fs-xl: 3.1rem;
+  --fs-h1: 1.28rem;
+  --fs-h2: 1.16rem;
+  --fs-p: 1rem;
+  --fs-small: .79rem;
+  --fs-a: .91rem;
 }
 
 html {
-  font-size: 100%;
+  font-size: 16px;
   scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
 }
 
 .preloader {
@@ -57,7 +67,7 @@ header {
 header .logo {
   text-decoration: none;
   font-family: Poppins;
-  font-size: 1.2em;
+  font-size: var(--fs-h1);
   color: var(--secondary-color);
   font-weight: bolder;
 }
@@ -110,7 +120,7 @@ header .nav-center .nav-link ul li a {
   text-decoration: none;
   font-family: Poppins;
   color: var(--last-color);
-  font-size: .9em;
+  font-size: var(--fs-a);
 }
 
 header .nav-center .nav-link ul li a:hover {
@@ -154,20 +164,20 @@ header .nav-center .nav-link ul .contact-style:hover {
 }
 
 .home .wrap .intro p {
-  font-size: 1em;
+  font-size: var(--fs-p);
   color: var(--secondary-color);
   font-family: var(--text-ff);
 }
 
 .home .wrap .intro .a {
-  font-size: 3.1em;
+  font-size: var(--fs-xl);
   color: var(--last-color);
   font-family: Poppins;
 }
 
 .home .wrap .intro .b {
   color: var(--text-color);
-  font-size: 3.1em;
+  font-size: var(--fs-xl);
   font-family: Poppins;
 }
 
@@ -248,7 +258,7 @@ header .nav-center .nav-link ul .contact-style:hover {
 }
 
 .about .sub-container .words p {
-  font-size: 1.3rem;
+  font-size: var(--fs-p);
   line-height: 1.4;
   text-align: justify;
   max-width: 90%;
@@ -328,6 +338,7 @@ header .nav-center .nav-link ul .contact-style:hover {
   line-height: 1.3em;
   letter-spacing: .1em;
   text-align: justify;
+  font-size: var(--fs-p);
 }
 
 .Skills .container4 .container4-1 div {
@@ -429,7 +440,7 @@ header .nav-center .nav-link ul .contact-style:hover {
 }
 
 .sample .samples .work-info .description p {
-  font-size: 1.1em;
+  font-size: var(--fs-p);
   font-family: Poppins;
 }
 
@@ -476,6 +487,7 @@ header .nav-center .nav-link ul .contact-style:hover {
   text-align: center;
   color: var(--secondary-color);
   letter-spacing: .1em;
+  font-size: var(--fs-p);
 }
 
 .contact h4 {
@@ -520,6 +532,7 @@ header .nav-center .nav-link ul .contact-style:hover {
   font-family: Poppins;
   color: var(--text-color);
   letter-spacing: .1em;
+  font-size: var(--fs-p);
 }
 
 .contact .container5 form div {
@@ -571,12 +584,13 @@ footer p {
   text-align: center;
   color: var(--text-color);
   letter-spacing: .1em;
+  font-size: var(--fs-small);
 }
 
 footer h1 {
   color: var(--secondary-color);
   font-family: var(--header-ff);
-  font-size: 1.2em;
+  font-size: var(--fs-h1);
   font-family: Poppins;
 }
 
@@ -601,7 +615,7 @@ footer div img {
 }
 
 .top-link {
-  font-size: 1.25rem;
+  font-size: var(--fs-h1);
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -695,7 +709,6 @@ footer div img {
   }
   header .nav-center .nav-link ul li a {
     background-color: #172a46;
-    font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
@@ -857,9 +870,6 @@ footer div img {
     border-radius: 100%;
     padding: .7em;
   }
-  footer p {
-    font-size: .8em;
-  }
 }
 
 @media only screen and (max-width: 590px) {
@@ -869,26 +879,24 @@ footer div img {
 }
 
 @media only screen and (max-width: 450px) {
+  :root {
+    --fs-xl: 1.31rem;
+    --fs-h1: 1.185rem;
+    --fs-h2: .925rem;
+    --fs-p: .81rem;
+    --fs-a: .83rem;
+  }
   .about .container2 .sub-container .words p {
     font-size: .8rem;
   }
   .about .container2 .sub-container .words div {
     margin: 1.4em 0 0 1em;
   }
-  .Skills .container4 .container4-1 p {
-    font-size: .8rem;
-  }
   .contact .container5 .wrapper div p {
     font-size: .7em;
   }
   .contact .container5 .wrapper div .imagebig {
     width: 23px;
-  }
-  footer p {
-    font-size: .5rem;
-  }
-  footer h1 {
-    font-size: 1rem;
   }
   footer div img {
     width: 20px;

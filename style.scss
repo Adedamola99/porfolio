@@ -13,13 +13,23 @@
     --text-ff: 'Commissioner', monospace;
 
     --transition: all 0.3s linear;
+
+    --fs-xl: 3.1rem;
+    --fs-h1: 1.28rem;
+    --fs-h2: 1.16rem;
+    --fs-p: 1rem;
+    --fs-small: .79rem;
+    --fs-a: .91rem;
 }
 
 html{
-    font-size: 100%;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
+body {
+    font-size: 1rem;
+}
 .preloader {
     position: fixed;
     top: 0;
@@ -54,7 +64,7 @@ header {
     .logo{
         text-decoration: none;
         font-family: Poppins;
-        font-size: 1.2em;
+        font-size: var(--fs-h1);
         color: var(--secondary-color);
         font-weight: bolder;
 
@@ -95,7 +105,7 @@ header {
                         text-decoration: none;
                         font-family: Poppins;
                         color: var(--last-color);
-                        font-size: .9em;
+                        font-size: var(--fs-a);
 
                         &:hover {
                             border-bottom:3px solid var(--secondary-color);
@@ -138,20 +148,20 @@ header {
             line-height: 1.2;
 
             p {
-                font-size: 1em;
+                font-size: var(--fs-p);
                 color: var(--secondary-color);
                 font-family: var(--text-ff);
             }
 
             .a {
-                font-size: 3.1em;
+                font-size: var(--fs-xl);
                 color: var(--last-color);
                 font-family: Poppins;
             }
 
             .b {
                color: var(--text-color); 
-               font-size: 3.1em;
+               font-size: var(--fs-xl);
                font-family: Poppins;
             }
 
@@ -228,7 +238,7 @@ header {
             }
 
             p {
-                font-size: 1.3rem;
+                font-size: var(--fs-p);
                 line-height: 1.4;
                 text-align: justify;
                 max-width: 90%;
@@ -305,6 +315,7 @@ header {
                 line-height: 1.3em;
                 letter-spacing: .1em;
                 text-align: justify;
+                font-size: var(--fs-p);
             }
 
             div {
@@ -389,7 +400,7 @@ header {
                 padding: 1em; 
                 
                 p {
-                    font-size: 1.1em;
+                    font-size: var(--fs-p);
                     font-family: Poppins;
                 }
 
@@ -434,6 +445,7 @@ header {
             text-align: center;
             color: var(--secondary-color);
             letter-spacing: .1em;
+            font-size: var(--fs-p);
         }
 
         h4 {
@@ -470,7 +482,7 @@ header {
                     font-family: Poppins;
                     color: var(--text-color);
                     letter-spacing: .1em;
-                    
+                    font-size: var(--fs-p);
                 }
             }
         }
@@ -524,12 +536,13 @@ footer {
         text-align: center;
         color: var(--text-color);
         letter-spacing: .1em;
+        font-size: var(--fs-small);
     }
 
     h1{
         color: var(--secondary-color);
         font-family: var(--header-ff);
-        font-size: 1.2em;
+        font-size: var(--fs-h1);
         font-family: Poppins;
     }
 
@@ -547,7 +560,7 @@ footer {
 }
 
 .top-link {
-    font-size: 1.25rem;
+    font-size: var(--fs-h1);
     position: fixed;
     bottom: 3rem;
     right: 3rem;
@@ -623,7 +636,6 @@ footer {
                         
                         a {
                             background-color: #172a46;
-                            font-size: 1.1rem;
                             text-transform: capitalize;
                             letter-spacing: var(--spacing);
                             display: block;
@@ -806,11 +818,6 @@ footer {
         }
     }
 
-    footer {
-        p {
-            font-size: .8em;
-        }
-    }
 
 }
 
@@ -833,6 +840,14 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
+    :root {
+        --fs-xl: 1.31rem;
+        --fs-h1: 1.185rem;
+        --fs-h2: .925rem;
+        --fs-p: .81rem;
+        --fs-a: .83rem;
+    }
+
 
     .about {
         .container2 {
@@ -850,15 +865,6 @@ footer {
         }
     }
 
-    .Skills {
-        .container4 {
-            .container4-1 {   
-                p {
-                    font-size: .8rem;
-                }
-            }
-        }
-    }
 
     .contact {
         .container5 {           
@@ -877,12 +883,6 @@ footer {
     }
 
     footer {
-        p {
-            font-size: .5rem;
-        }
-        h1{
-            font-size: 1rem;
-        }
         div {   
             img {
                 width: 20px;

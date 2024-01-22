@@ -1,8 +1,12 @@
-# My Portfolio
+# My Portfolio Website
+
+----------------
 
 <p>This is my portfolio website showing important information about me,skills and other necessary things I'd like to share</p>
-<h1>Table of Content</h1>
 
+--------------------
+
+<h1>Table of Content</h1>
 <ul>
   <li>Overview
     <ul>

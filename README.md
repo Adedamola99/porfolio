@@ -24,6 +24,5 @@
 </ul>
 
 # The challenge
----
 # Screenshot 
 # THIS README IS UNDER CONSTRUCTION.........

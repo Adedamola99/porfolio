@@ -23,7 +23,9 @@
   <li>Acknowledgments</li>
 </ul>
 # Overview
+
  ⚫ The challenge
+
 # Screenshot 
 # Link
 # THIS README IS UNDER CONSTRUCTION...

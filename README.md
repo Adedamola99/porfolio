@@ -30,3 +30,5 @@
 # Link
 # THIS README IS UNDER CONSTRUCTION..............
 👷🏗️🚧
+
+© soon.

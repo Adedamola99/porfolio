@@ -33,4 +33,4 @@
 # THIS README IS UNDER CONSTRUCTION..............
 👷🏗️🚧
 
-© soon.
+© soon...,.

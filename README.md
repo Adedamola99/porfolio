@@ -24,7 +24,7 @@
 </ul>
 # Overview
 
- ⚫ The challenge
+# The challenge
 
 # Screenshot
 

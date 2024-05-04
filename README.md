@@ -30,7 +30,7 @@
 
 # Link
 
-# THIS README IS UNDER CONSTRUCTION..............
+# THIS README IS UNDER CONSTRUCTION............
 👷🏗️🚧
 
 © Kindly be patient with us. 🙏
